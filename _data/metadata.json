@@ -1,0 +1,15 @@
+{
+  "title": "SheCodes OKC",
+  "url": "https://myurl.com/",
+  "feed": {
+    "subtitle": "",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://myurl.com/feed/feed.xml",
+    "id": "https://myurl.com/"
+  },
+  "author": {
+    "name": "Carmen Bourlon",
+    "email": "carmensemail@electronicmail.com"
+  }
+}

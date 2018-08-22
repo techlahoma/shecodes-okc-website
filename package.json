@@ -1,0 +1,20 @@
+{
+  "name": "shecodes-www",
+  "version": "1.0.0",
+  "description": "SheCodes OKC",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch --serve"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "0.4.0",
+    "@11ty/eleventy-plugin-rss": "1.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "1.0.5",
+    "luxon": "1.3.3",
+    "markdown-it": "8.4.2",
+    "markdown-it-anchor": "5.0.2"
+  }
+}
