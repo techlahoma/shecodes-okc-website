@@ -1,5 +1,5 @@
 ---
-title: Build a dynamic website with React Part 2
+title: "Build a dynamic website with React: Part 2"
 tags:
   - react
   - javascript
@@ -8,7 +8,7 @@ tags:
 date: "2018-08-26T03:44:08.920Z"
 layout: post
 ---
-Author: [Carmen Bourlon](https://twitter.com/carmalou)
+#### Author: [Carmen Bourlon](https://twitter.com/carmalou)
 
 Now that we are all set up to code, let's build something! Open up your terminal and generate a new React app with:
 
@@ -26,7 +26,7 @@ Notice that within our app there are some files and three folders: `public`, `no
 
 Within the `src` folder, there is an `App.js` file. Within this file there is a `render` function. A core concept of React is that all of our code will be in the JavaScript files and will be rendered through this `render` function. This means we won't have any HTML files.
 
-The app we are building together is going to use [FayePI](link). We'll be building a list of romantic comedies.
+The app we are building together is going to use [FayePI](https://fayepi.herokuapp.com/). We'll be building a list of romantic comedies. (Quick disclosure: I am the author of FayePI.)
 
 Let's hop into the `App.js` file and set some stuff up. Our `App.js` file will look like this:
 
@@ -64,11 +64,12 @@ constructor(props) {
 
 State is where we store the app's data. In our case, this is where we will store the list of movies and the information about each movie.
 
-Next let's set up an Action which is where we'll fetch the movies and information from FayePI. React likes to separate view logic (components) from BLANKETY BLANK. You can read up on this more in [the React docs.](link)
+Next let's set up a file which is where we'll fetch the movies and information from FayePI. React likes to separate view logic (components) from other logic. You can read up on this more in [the React docs.](https://reactjs.org/docs/getting-started.html)
 
-Our action will look like this:
+Our file will look like this:
 
 ```
+// fetchMovies.js
 export default function fetchMovies() {
     return window.fetch('https://fayepi.herokuapp.com/romcoms')
     .then(function(response) {
@@ -77,7 +78,7 @@ export default function fetchMovies() {
 }
 ```
 
-We are using [fetch](link) to call FayePI, which returns a promise. [Read up on promises here](link) if you aren't familiar with them.
+We are using [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) to call FayePI, which returns a promise. [Read up on promises here](https://scotch.io/tutorials/javascript-promises-for-dummies) if you aren't familiar with them.
 
 First, we make a request to FayePI. This can take an unknown amount of time, so this code picks up once the response is sent back to us with the `.then()` block. Within that we are parsing the response into a useable format with `response.json()`.
 
@@ -89,7 +90,7 @@ Before we can call the function we wrote, we need to import the file like this:
 import FetchMovies from './fetchMovies';
 ```
 
-React has several [lifecycle methods](link) which allow specific functions to be triggered at certain points while the app is loading. The one we will use is `componentDidMount`. This event is trigger immediately after the app has loaded. Our function will look like this:
+React has several [lifecycle methods](https://reactjs.org/docs/state-and-lifecycle.html) which allow specific functions to be triggered at certain points while the app is loading. The one we will use is `componentDidMount`. This event is trigger immediately after the app has loaded. Our function will look like this:
 
 ```
 componentDidMount() {
@@ -105,4 +106,4 @@ Notice that we are using `this.setState()` instead of just saying `this.state.mo
 
 Now our app loads and immediately calls out to the API to access the list of movies.
 
-[Read on for part 3, where we will write and implement components!](link)
+[Read on for part 3, where we will write and implement components!](../react-pt3)

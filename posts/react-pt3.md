@@ -1,5 +1,5 @@
 ---
-title: Build a dynamic website with React Part 3
+title: "Build a dynamic website with React: Part 3"
 tags:
   - react
   - javascript
@@ -8,9 +8,9 @@ tags:
 date: "2018-08-26T03:44:08.920Z"
 layout: post
 ---
-Author: [Carmen Bourlon](https://twitter.com/carmalou)
+#### Author: [Carmen Bourlon](https://twitter.com/carmalou)
 
-In our first blog post [we set up our development environment to write React.](link) In the second post, [we called out to an API and added an event listener to automatically fetch data when our app loads.](link) In this third and final blog post, we'll write two components to show the movie data and complete our list of romantic comedies.
+In our first blog post [we set up our development environment to write React.](../react-pt1) In the second post, [we called out to an API and added an event listener to automatically fetch data when our app loads.](../react-pt2) In this third and final blog post, we'll write two components to show the movie data and complete our list of romantic comedies.
 
 First thing we will do is create a component for the _list_ of movies. It will look like this:
 
@@ -74,7 +74,7 @@ render() {
     }
 ```
 
-Above we are listing out the title of each movie, after accessing the data from `props`. The `key` property is providing React a unique identifier for each paragraph. [You can read more about that here.](link) 
+Above we are listing out the title of each movie, after accessing the data from `props`. The `key` property is providing React a unique identifier for each paragraph. [You can read more about that here.](https://reactjs.org/docs/lists-and-keys.html#keys) 
 
 But this isn't quite what we want. Let's write a second component to format each individual movie. That component will look like this:
 
@@ -124,6 +124,6 @@ render() {
 
 Notice `this.props.movies.map`, the function is looping over each object within the movies array and returning an individual `Movie` component. Within this component we are able to pass in a single `movie` object, instead of passing in the entire `movies` array.
 
-And with that ... we're done! Simply run `npm start` and you'll see your finished product! You'll probably want to add some CSS to liven things up a bit. Check out [the finished product](link) to see how we used [Bootstrap](link) to style our app.
+And with that ... we're done! Simply run `npm start` and you'll see your finished product! You'll probably want to add some CSS to liven things up a bit. Check out [the finished product](https://github.com/carmalou/react-shecodes) to see how we used [Bootstrap](https://getbootstrap.com/) to style our app.
 
--- [Carmen](link)
+-- [Carmen](https://twitter.com/carmalou)
