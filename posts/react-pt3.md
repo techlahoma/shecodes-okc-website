@@ -22,7 +22,6 @@ export default class MovieList extends Component {
     }
 
     render() {
-        console.log(this.props);
         return (
             <div>
                 // the second component will go here
@@ -66,17 +65,17 @@ Back in the `MovieList` component, we'll access the data from `App.js` like this
 render() {
         return (
             <div>
-                <h1>Carmen's list of rom-coms</h1>
-                
                 { this.props.movie.map((movie, key) => {
-                    return <p>{ movie.movie_title }</p>
+                    return <p key={ movie.movie_title }>{ movie.movie_title }</p>
                 })}
             </div>
         )
     }
 ```
 
-Above we are listing out the title of each movie, after accessing the data from `props`. But this isn't quite what we want. Let's write a second component to format each individual movie. That component will look like this:
+Above we are listing out the title of each movie, after accessing the data from `props`. The `key` property is providing React a unique identifier for each paragraph. [You can read more about that here.](link) 
+
+But this isn't quite what we want. Let's write a second component to format each individual movie. That component will look like this:
 
 ```
 import React, { Component } from 'react';
@@ -114,7 +113,7 @@ render() {
         <div>
             <div>
                 { this.props.movies.map((movie, key) => {
-                    return <Movie movie={ movie } />
+                    return <Movie key={ movie.movie_title } movie={ movie } />
                 })}
             </div>
         </div>
