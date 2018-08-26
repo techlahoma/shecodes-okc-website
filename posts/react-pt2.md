@@ -34,8 +34,8 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
 
   render() {
@@ -53,8 +53,8 @@ export default App;
 We'll define our state within the constructor function. It will look like this:
 
 ```
-constructor() {
-    super();
+constructor(props) {
+    super(props);
     this.state = {
       movies: []
     };
