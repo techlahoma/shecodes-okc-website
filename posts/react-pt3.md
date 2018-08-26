@@ -5,7 +5,7 @@ tags:
   - javascript
   - dynamic-website
   - FayePI
-date: 2018-08-25
+date: "2018-08-26T03:44:08.920Z"
 layout: post
 ---
 
