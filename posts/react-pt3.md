@@ -8,6 +8,7 @@ tags:
 date: "2018-08-26T03:44:08.920Z"
 layout: post
 ---
+Author: [Carmen Bourlon](https://twitter.com/carmalou)
 
 In our first blog post [we set up our development environment to write React.](link) In the second post, [we called out to an API and added an event listener to automatically fetch data when our app loads.](link) In this third and final blog post, we'll write two components to show the movie data and complete our list of romantic comedies.
 

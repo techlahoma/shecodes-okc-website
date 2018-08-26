@@ -8,6 +8,7 @@ tags:
 date: "2018-08-26T03:44:08.920Z"
 layout: post
 ---
+Author: [Carmen Bourlon](https://twitter.com/carmalou)
 
 Now that we are all set up to code, let's build something! Open up your terminal and generate a new React app with:
 
