@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: About SheCodes OKC
+title: About SheCodesOKC
 tags:
   - nav
 navtitle: About
