@@ -46,15 +46,15 @@ Now, behold the payoff. We've just creatated an admin site that lets you log in,
 
 The admin log-in prompt is automatically created.
 
-![The admin log-in prompt](../img/DjangoAdminLogin.PNG "The admin log-in prompt")
+![The admin log-in prompt](/img/DjangoAdminLogin.PNG "The admin log-in prompt")
 
 An interface to add/edit users and articles, as well as the logout functionality.
 
-![The main admin site](../img/DjangoAdminMain.PNG "The main admin site")
+![The main admin site](/img/DjangoAdminMain.PNG "The main admin site")
 
 All the fields in our Article table are shown here with user-friendly niceties such as the date picker and today/now shortcuts.
 
-![Adding or editing an item in the database](../img/DjangoAdminAdd.PNG "Adding or editing an item in the database")
+![Adding or editing an item in the database](/img/DjangoAdminAdd.PNG "Adding or editing an item in the database")
 
 That's so easy!
 
